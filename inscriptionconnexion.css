@@ -28,7 +28,7 @@ body{
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #e67e22;
+  border: 2px solid #f30000;
   padding: 14px 10px;
   width: 200px;
   outline: none;
@@ -55,7 +55,7 @@ body{
   cursor: pointer;
 }
 .box input[type = "submit"]:hover{
-  background: #f1c40f;
+  background: #e67e22;
 }
 
 /* On modernise notre balise de navigation avec une petite ombre. On mets tous les éléments du menu les uns bien à côté des autres avec flexbox (display: flex) */
