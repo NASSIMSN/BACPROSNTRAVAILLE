@@ -13,7 +13,7 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     z-index: 1; /* Pour placer la barre de navigation au-dessus de l'image */
     background-color: rgba(255, 255, 255, 0.9);
     padding: 10px 20px;
