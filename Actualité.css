@@ -1,95 +1,69 @@
-body{
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: #151e2b;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #151e2b;
 }
-.box {
-  width: 500px;
-  padding: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgb(0, 0, 0);
-  text-align: center;
-  border-radius: 50px;
+
+.container {
+    position: relative;
 }
-/* On modernise notre balise de navigation avec une petite ombre. On mets tous les éléments du menu les uns bien à côté des autres avec flexbox (display: flex) */
+
 nav {
-  background-color: #fff;
-  padding: 0 20px; /* Raccourci les marges internes */
-  border-radius: 40px;
-  box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
-  display: flex;
-  justify-content: center; /* Centre la barre de navigation */
-  overflow: hidden;
-  overflow-x: auto;
-  position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Ajoute une légère transparence pour voir l'image en arrière-plan */
+    padding: 10px 20px; /* Tu peux ajuster les marges internes selon tes besoins */
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+    display: flex;
+    justify-content: center; /* Centre la barre de navigation */
+    overflow: hidden;
+    overflow-x: auto;
 }
-/* On stylise chaque élément */
+
 .nav-item {
-  color: #83818c;
-  font-family: arial, sans-serif;
-  padding: 20px; /* Ajoute une marge interne */
-  margin: 0 6px;
-  position: relative;
-}
-/* On fait en sorte que chaque élément contienne sa marge interne avec box-sizing et on retire les traits qui sont par défaut sur les liens */
-* {
-  box-sizing: border-box;
-  text-decoration: none;
+    color: #83818c;
+    font-family: arial, sans-serif;
+    padding: 20px;
+    margin: 0 6px;
+    position: relative;
+    text-decoration: none;
 }
 
-/* On modernise notre balise de navigation avec une petite ombre. On mets tous les éléments du menu les uns bien à côté des autres avec flexbox (display: flex) */
-nav {
-  background-color: #fff;
-  padding: 0 20px; /* Raccourci les marges internes */
-  border-radius: 40px;
-  box-shadow: 0 10px 40px rgba(159, 162, 177, .8);
-  display: flex;
-  justify-content: center; /* Centre la barre de navigation */
-  overflow: hidden;
-  overflow-x: auto;
-  position: relative;
-}
-
-/* On stylise chaque élément */
-.nav-item {
-  color: #83818c;
-  font-family: arial, sans-serif;
-  padding: 20px; /* Ajoute une marge interne */
-  margin: 0 6px;
-  position: relative;
-}
-
-/* Ici on met juste un petit élément avant chaque élément pour le rendre plus beau visuellement */
 .nav-item:before {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  background-color: #dfe2ea;
-  height: 5px;
-  width: 100%;
-  border-radius: 8px 8px 0 0;
-  left: 0;
-  transition: .3s;
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    background-color: #dfe2ea;
+    height: 5px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    left: 0;
+    transition: .3s;
 }
 
-/* Avec les dernières nouveautés de CSS, on peut changer les propriétés des éléments selon des conditions avec not */
 .nav-item:not(.is-active):hover:before {
-  bottom: 0;
-}
-.nav-item:not(.is-active):hover {
-  color: #333;
+    bottom: 0;
 }
 
-/* Stylisons notre indicateur */
+.nav-item:not(.is-active):hover {
+    color: #333;
+}
+
 .nav-indicator {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 5px;
-  transition: .4s;
-  border-radius: 8px 8px 0 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    transition: .4s;
+    border-radius: 8px 8px 0 0;
+}
+
+.logo-image {
+    display: block;
+    width: 100%; /* Pour s'assurer que l'image occupe toute la largeur */
+    height: auto; /* Pour maintenir le rapport hauteur-largeur */
 }
