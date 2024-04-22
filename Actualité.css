@@ -14,12 +14,13 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9); /* Ajoute une légère transparence pour voir l'image en arrière-plan */
-    padding: 10px 20px; /* Tu peux ajuster les marges internes selon tes besoins */
+    z-index: 1; /* Pour placer la barre de navigation au-dessus de l'image */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
     border-radius: 40px;
     box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
     display: flex;
-    justify-content: center; /* Centre la barre de navigation */
+    justify-content: center;
     overflow: hidden;
     overflow-x: auto;
 }
@@ -64,6 +65,6 @@ nav {
 
 .logo-image {
     display: block;
-    width: 100%; /* Pour s'assurer que l'image occupe toute la largeur */
-    height: auto; /* Pour maintenir le rapport hauteur-largeur */
+    width: 100%;
+    height: auto;
 }
