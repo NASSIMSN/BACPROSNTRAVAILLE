@@ -67,4 +67,6 @@ nav {
     display: block;
     width: 100%;
     height: auto;
+    position: relative; /* Pour permettre à la barre de navigation d'être positionnée au-dessus de l'image */
+    z-index: 0; /* Assure-toi que l'image est positionnée en dessous de la barre de navigation */
 }
